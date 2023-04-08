@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animal Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+		// Define an array of image sources
+		var images = [
+			"https://th.bing.com/th/id/OIP.XiehZv6K14xbFwkcgI0meAHaFj?pid=ImgDet&rs=1",
+			"https://www.bing.com/images/search?view=detailV2&ccid=AqulJ%2b3Z&id=B7045FBE059FBCD27D781BAD6CEE5E4654C8CE68&thid=OIP.AqulJ-3Z_l_TKqUiQBNbfgHaKg&mediaurl=https%3a%2f%2fi.pinimg.com%2f736x%2f2d%2ff6%2fdb%2f2df6dbe8ff3e019bc25c43617ba5150d.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.02aba527edd9fe5fd32aa52240135b7e%3frik%3daM7IVEZe7mytGw%26pid%3dImgRaw%26r%3d0&exph=1044&expw=736&q=cat&simid=608001528034186791&FORM=IRPRST&ck=B3E20C92FC2BC1FE20CEB456FE979767&selectedIndex=3"
+		];
+
+		// Get the img element
+		var img = document.getElementById("animal-img");
+
+		// Define a function to shuffle the images
+		function shuffleImages() {
+			// Generate a random index between 0 and the length of the images array
+			var index = Math.floor(Math.random() * images.length);
+
+			// Set the src attribute of the img element to the image at the generated index
+			img.src = images[index];
+		}
+
+		// Call the shuffleImages function every 3 seconds
+		setInterval(shuffleImages, 3000);
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Animal Website</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Welcome to the Animal Website</h2>
+			<p>On this website, you can learn about all kinds of animals, from domestic pets to wild creatures. Explore our pages to discover interesting facts and information about your favorite animals.</p>
+		</section>
+		<section>
+	<h2>Featured Animal: Lions</h2>
+	<div class="lion-img-container">
+		<img id="lion-img" src="https://th.bing.com/th/id/R.acc9f4b59a9550eb1c7eb0bd17ca8246?rik=ZmRCeOiXJh0TXg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-LRRzMp-zTxA%2fUFM5fJabQPI%2fAAAAAAAAJ_o%2fLWp-23eq3VU%2fs1600%2fMale%2bLion%2bWallpapers%2b2.jpg&ehk=HLvrnoewJ7yfExc%2fQoicARoIQE5C7%2bjB2iB3qGEhX0Y%3d&risl=&pid=ImgRaw&r=0" alt="Lion">
+	</div>
+	<p>Lions are one of the most recognizable and beloved animals in the world. They are part of the cat family, and are known for their majestic mane and loud roar. Lions are apex predators, meaning they are at the top of the food chain in their ecosystems.</p>
+	<p>Learn more about lions with our interactive quiz below:</p>
+	<iframe src="https://play.howstuffworks.com/quiz/lion-quiz" width="100%" height="800px" scrolling="no" frameborder="0"></iframe>
+</section>
+		<section>
+			<h2>Animal Websites</h2>
+			<ul>
+				<li><a href="https://www.bing.com/search?q=dog+animal+website&cvid=d89cc67ec288473f875d9fdb569e6212&aqs=edge..69i57j0l3j69i64.3948j0j9&FORM=ANAB01&PC=EDGEDB">Dogs</a></li>
+				<li><a href="https://www.hillspet.com/cat-food/pd-metabolic-feline-dry?gclid=55ff8a1777a3100af76bee27a0feaeef&gclsrc=3p.ds&msclkid=55ff8a1777a3100af76bee27a0feaeef&utm_source=bing&utm_medium=cpc&utm_campaign=US_PET_PD_Weight%20Conditions_Cat_EVG_TEXT_BRND_BRD_PUR_LED_NA_RFUS_EN_HLN%20HIL%20130&utm_term=metabolic%20hills%20cat%20food&utm_content=PD_Metabolic_Cat">Cats</a></li>
+				<li><a href="https://www.bing.com/search?q=fish&cvid=f702f391f58d45e7bdf17343444a4a03&aqs=edge.0.0j46l2j0l3j46j0j46.255j0j9&FORM=ANAB01&PC=EDGEDB">Fish</a></li>
+				<li><a href="https://www.bing.com/search?q=Reptiles&cvid=879def2aa9d34213bc7402169b6f8475&aqs=edge..69i57j0j46j0l6.111j0j4&FORM=ANAB01&PC=EDGEDB">Reptiles</a></li>
+				<li><a href="https://www.bing.com/search?q=wildlife&cvid=587c1d4c71db47bb8ea898a2924f2d8c&aqs=edge.0.0j46l2j0j46j0l3j46.351j0j9&FORM=ANAB01&PC=EDGEDB">Wildlife</a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>Animal News</h2>
+			<ul>
+				<li><a href="https://greatergood.berkeley.edu/article/item/does_your_dog_have_empathy_for_you#:~:text=Researchers%20at%20the%20University%20of%20Vienna%20came%20up,one%20of%20the%20key%20building%20blocks%20for%20empathy.">New study finds dogs can sense emotion in humans</a></li>
+				<li><a href="https://www.bing.com/search?q=Rare+bird+species+discovered+in+Amazon+rainforest&cvid=4f7c63fbf7fd4570bce95733c598a018&aqs=edge..69i57.526j0j4&FORM=ANAB01&PC=EDGEDB">Rare bird species discovered in Amazon rainforest</a></li>
+				<li><a href="https://www.nationalgeographic.com/animals/article/new-hunting-rules-alaska-national-preserves">Controversial new hunting laws passed in Alaska</a></li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>

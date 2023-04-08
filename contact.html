@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function sendEmail() {
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var message = document.getElementById("message").value;
+
+			if (name == "" || email == "" || message == "") {
+				alert("Please fill out all fields.");
+				return false;
+			}
+
+			var body = "Name: " + name + "%0D%0AEmail: " + email + "%0D%0AMessage: " + message;
+			window.location.href = "mailto:ganc@nycstudents.net?subject=Website Contact&body=" + body;
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Contact Us</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Send Us a Message</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea><br>
+
+				<input type="button" value="Send" onclick="sendEmail()">
+			</form>
+		</section>
+	</main>
+</body>
+</html>
